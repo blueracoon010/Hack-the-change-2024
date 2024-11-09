@@ -1,10 +1,10 @@
 // tabs/TabNavigator.tsx
 import React from 'react';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import FoodScreen from '../app/screens/FoodScreen';
-import ShelterScreen from '../app/screens/ShelterScreen';
-import JobBoardScreen from '../app/screens/JobBoardScreen';
-import HealthcareScreen from '../app/screens/HealthcareScreen';
+import FoodScreen from '../screens/FoodScreen';
+import ShelterScreen from '../screens/ShelterScreen';
+import JobBoardScreen from '../screens/JobBoardScreen';
+import HealthcareScreen from '../screens/HealthcareScreen';
 
 const Tab = createBottomTabNavigator();
 
