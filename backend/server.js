@@ -3,13 +3,18 @@ const cors = require('cors');
 const bodyParser = require('body-parser');
 require('dotenv').config();
 
-const userRoutes = require('./routes/users'); // Make sure the path is correct
+
 
 const app = express();
 
 // Middleware
 app.use(cors());
 app.use(bodyParser.json());
+
+// Import Routes
+const userRoutes = require('./routes/user');
+
+
 
 // Basic Route
 app.get('/', (req, res) => {
