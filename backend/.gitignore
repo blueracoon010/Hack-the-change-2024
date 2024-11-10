@@ -15,3 +15,6 @@ npm-debug.log
 # Ignore macOS system files
 .DS_Store
 
+#Ignore the service account key.js
+serviceAccountKey.json
+
