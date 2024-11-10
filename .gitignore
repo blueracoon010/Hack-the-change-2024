@@ -1,0 +1,29 @@
+# Node.js (backend)
+node_modules/
+npm-debug.log
+yarn-error.log
+.env
+build/
+dist/
+
+# React (frontend)
+node_modules/
+build/
+.env
+.vscode/
+
+# Firebase service account key (backend)
+serviceAccountKey.json
+
+# System files
+.DS_Store
+
+# IDE files
+.idea/
+.project/
+.vscode/
+
+# Logs
+*.log
+
+
