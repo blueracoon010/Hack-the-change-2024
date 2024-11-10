@@ -1,9 +1,9 @@
 const admin = require("firebase-admin");
-const serviceAccount = require("./path/to/your/serviceAccountKey.json");
+const serviceAccount = require("./config/serviceaccountKey.json");
 
 admin.initializeApp({
   credential: admin.credential.cert(serviceAccount),
-  databaseURL: "https://your-project-id.firebaseio.com"
+  databaseURL: "https://console.firebase.google.com/project/hack-the-change-202/database"
 });
 
 const db = admin.firestore();
