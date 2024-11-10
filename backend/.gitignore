@@ -18,3 +18,7 @@ npm-debug.log
 #Ignore the service account key.js
 serviceAccountKey.json
 
+
+#Ignore accidental react node modules 
+my-app/
+
