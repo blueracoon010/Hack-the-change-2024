@@ -1,12 +1,13 @@
 const express = require('express');
 const router = express.Router();
+const { registerUser, getUserProfile } = require('../controllers/userController');
+const verifyIdToken = require('../middleware/authMiddleware');
 
-// POST route for user registration
-router.post('/register', (req, res) => {
-  const { name, email, password } = req.body;
-  // Here you would add the user to your database
-  res.status(200).json({ message: 'User registered successfully!' });
-});
+// Register a new user
+router.post('/register', registerUser);
+
+// Get user profile (requires authentication)
+router.get('/profile', verifyIdToken, getUserProfile);
 
 module.exports = router;
 
