@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>newroots App Sign Up</title>
+    <style>
+        /* Body Styling */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f0e9d2;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            color: #4b4b4b;
+        }
+
+        /* Logo Styling */
+        .logo {
+            width: 100px;
+            height: 100px;
+            margin-top: 20px;
+        }
+
+        /* Input Container Styling */
+        .input-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            max-width: 350px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            margin-top: 20px;
+            box-sizing: border-box;
+        }
+
+        /* Heading Styling Inside Box */
+        .input-container h1 {
+            font-size: 28px;
+            color: #4a7c59;
+            margin: 0 0 20px;
+            text-align: center;
+        }
+
+        /* Input Row Styling */
+        .input-row {
+            display: flex;
+            align-items: center;
+            width: 100%;
+            margin-bottom: 15px;
+        }
+
+        /* Label Styling */
+        label {
+            width: 100px;
+            font-weight: bold;
+            color: #4a7c59;
+            margin-right: 10px;
+        }
+
+        /* Input Field Styling */
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        input[type="password"] {
+            width: 200px;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            font-size: 16px;
+            box-sizing: border-box;
+        }
+
+        /* Hide default file input */
+        input[type="file"] {
+            display: none;
+        }
+
+        /* Custom button for file input */
+        .custom-file-upload {
+            padding: 10px 20px;
+            background-color: #5a8f7c;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+            width: 200px;
+            text-align: center;
+        }
+
+        .custom-file-upload:hover {
+            background-color: #4b7d67;
+        }
+
+        /* Button Styling */
+        button {
+            padding: 12px 20px;
+            background-color: #5a8f7c;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            cursor: pointer;
+            width: 100%;
+            margin-top: 15px;
+        }
+
+        button:hover {
+            background-color: #4b7d67;
+        }
+
+        /* Footer Styling */
+        footer {
+            margin-top: 20px;
+            color: #9b9b9b;
+            font-size: 14px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Logo Section -->
+    <img src="tree-logo.png" alt="App Logo" class="logo">
+
+    <!-- Input Section -->
+    <div class="input-container">
+        <h1>Sign Up for newroots</h1>
+
+        <div class="input-row">
+            <label for="name">Name</label>
+            <input type="text" id="name" placeholder="Full Name">
+        </div>
+
+        <div class="input-row">
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Email Address">
+        </div>
+
+        <div class="input-row">
+            <label for="phone">Phone</label>
+            <input type="tel" id="phone" placeholder="Phone Number">
+        </div>
+
+        <div class="input-row">
+            <label for="password">Password</label>
+            <input type="password" id="password" placeholder="Password">
+        </div>
+
+        <!-- Custom File Upload Section -->
+        <div class="input-row">
+            <label>Photo</label>
+            <label for="photo-upload" class="custom-file-upload">Upload Photo</label>
+            <input type="file" id="photo-upload" accept="image/*">
+        </div>
+
+        <button>Create Account</button>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 newroots | All Rights Reserved</p>
+    </footer>
+
+</body>
+
+</html>
