@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>newroots App Sign Up</title>
+    <style>
+        /* Body Styling */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f0e9d2;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            color: #4b4b4b;
+        }
+
+        /* Logo Styling */
+        .logo {
+            width: 100px;
+            height: 100px;
+            margin-top: 20px;
+        }
+
+        /* Heading Styling */
+        h1 {
+            font-size: 36px;
+            color: #4a7c59;
+            margin: 10px 0;
+            text-align: center;
+        }
+
+        h2 {
+            font-size: 20px;
+            color: #9b9b9b;
+            margin-bottom: 30px;
+            text-align: center;
+            font-style: italic;
+        }
+
+        /* Input Container Styling */
+        .input-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            max-width: 350px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            margin-top: 20px;
+        }
+
+        /* Label Styling */
+        label {
+            margin: 10px 0 5px;
+            font-weight: bold;
+            color: #4a7c59;
+        }
+
+        /* Input Field Styling */
+        input {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            font-size: 16px;
+            box-sizing: border-box;
+        }
+
+        /* Button Styling */
+        button {
+            padding: 12px 20px;
+            background-color: #5a8f7c;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        button:hover {
+            background-color: #4b7d67;
+        }
+
+        /* Footer Styling */
+        footer {
+            position: fixed;
+            bottom: 20px;
+            color: #9b9b9b;
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Logo Section -->
+    <img src="tree-logo.png" alt="App Logo" class="logo">
+
+    <!-- Heading Section -->
+    <h1>Sign Up for newroots</h1>
+    <h2>Grounded in support</h2>
+
+    <!-- Input Section -->
+    <div class="input-container">
+        <label for="name">Name</label>
+        <input type="text" id="name" placeholder="Full Name">
+
+        <label for="email">Email Address</label>
+        <input type="email" id="email" placeholder="Email Address">
+
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" placeholder="Phone Number">
+
+        <label for="photo">Upload Photo</label>
+        <input type="file" id="photo" accept="image/*">
+
+        <button>Create Account</button>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 newroots | All Rights Reserved</p>
+    </footer>
+
+</body>
+
+</html>
