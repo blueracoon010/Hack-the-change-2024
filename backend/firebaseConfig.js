@@ -1,20 +1,11 @@
-// firebaseConfig.js
-const firebase = require("firebase/app");
-require("firebase/auth");
-require("firebase/firestore");
+const admin = require("firebase-admin");
+const serviceAccount = require("./path/to/your/serviceAccountKey.json");
 
-// Firebase configuration from Firebase Console
-const firebaseConfig = {
-  apiKey: "YOUR_API_KEY",
-  authDomain: "YOUR_AUTH_DOMAIN",
-  projectId: "YOUR_PROJECT_ID",
-  storageBucket: "YOUR_STORAGE_BUCKET",
-  messagingSenderId: "YOUR_MESSAGING_SENDER_ID",
-  appId: "YOUR_APP_ID",
-};
+admin.initializeApp({
+  credential: admin.credential.cert(serviceAccount),
+  databaseURL: "https://your-project-id.firebaseio.com"
+});
 
-// Initialize Firebase
-firebase.initializeApp(firebaseConfig);
+const db = admin.firestore();
+module.exports = { admin, db };
 
-// Export Firebase instance for use in other files
-module.exports = firebase;
