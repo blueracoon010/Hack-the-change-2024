@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center"
+    android:background="#f0e9d2"
+    tools:ignore="ExtraText"> <!-- Light Beige -->
+
+    <!-- Logo Section -->
+    <ImageView
+        android:src="@drawable/tree_logo"
+    android:contentDescription="Tree Logo"
+    android:layout_width="100dp"
+    android:layout_height="100dp"
+    android:layout_marginTop="20dp"
+    android:layout_centerHorizontal="true" />
+
+
+    <!-- Heading Section -->
+    <TextView
+        android:text="Welcome to newroots"
+        android:textSize="36sp"
+        android:textColor="#4a7c59"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center" />
+
+    <TextView
+        android:text="Grounded in support"
+        android:textSize="20sp"
+        android:textColor="#9b9b9b"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="30dp"
+    android:gravity="center"
+    android:fontStyle="italic" />
+
+    <!-- Input Section -->
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="#ffffff"
+        android:padding="30dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <!-- Email Field -->
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:padding="12dp"
+            android:layout_marginBottom="15dp"
+            android:inputType="textEmailAddress" />
+
+        <!-- Password Field -->
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:padding="12dp"
+            android:layout_marginBottom="25dp"
+            android:inputType="textPassword" />
+
+        <!-- Button -->
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="#5a8f7c"
+            android:gravity="center"
+            android:padding="12dp"
+            android:text="Sign Up"
+            android:textColor="#ffffff"
+            tools:ignore="TextContrastCheck" />
+
+    </LinearLayout>
+
+    <!-- Footer -->
+    <TextView
+        android:text="© 2024 newroots | All Rights Reserved"
+        android:textColor="#9b9b9b"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:textSize="14sp"
+        android:gravity="center" />
+
+</LinearLayout>

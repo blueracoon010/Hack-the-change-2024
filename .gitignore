@@ -1,29 +1,15 @@
-# Node.js (backend)
-node_modules/
-npm-debug.log
-yarn-error.log
-.env
-build/
-dist/
-
-# React (frontend)
-node_modules/
-build/
-.env
-.vscode/
-
-# Firebase service account key (backend)
-serviceAccountKey.json
-
-# System files
+*.iml
+.gradle
+/local.properties
+/.idea/caches
+/.idea/libraries
+/.idea/modules.xml
+/.idea/workspace.xml
+/.idea/navEditor.xml
+/.idea/assetWizardSettings.xml
 .DS_Store
-
-# IDE files
-.idea/
-.project/
-.vscode/
-
-# Logs
-*.log
-
-
+/build
+/captures
+.externalNativeBuild
+.cxx
+local.properties
